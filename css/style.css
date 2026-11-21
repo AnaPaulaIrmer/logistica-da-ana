@@ -1,0 +1,178 @@
+
+/* =================================
+   1. CONFIGURAÇÕES GERAIS
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6fa;
+    color: #333333;
+}
+
+
+/* =================================
+   2. MENU LATERAL
+================================= */
+
+.menu-lateral {
+    width: 250px;
+    height: 100vh;
+    background-color: #17365d;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 25px 15px;
+}
+
+.menu-lateral h2 {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.menu-lateral nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.menu-lateral a {
+    color: white;
+    text-decoration: none;
+    padding: 13px 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.menu-lateral a:hover {
+    background-color: #28558a;
+}
+
+
+/* =================================
+   3. CONTEÚDO PRINCIPAL
+================================= */
+
+.conteudo {
+    margin-left: 250px;
+    padding: 35px;
+}
+
+.conteudo header {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.conteudo header h1 {
+    color: #17365d;
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+.conteudo header p {
+    color: #777777;
+}
+
+
+/* =================================
+   4. SEÇÕES DO SISTEMA
+================================= */
+
+.conteudo section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    min-height: 120px;
+}
+
+.conteudo section h2 {
+    color: #17365d;
+    margin-bottom: 12px;
+    font-size: 21px;
+}
+
+.conteudo section p {
+    color: #777777;
+    line-height: 1.6;
+}
+
+
+/* =================================
+   5. ADAPTAÇÃO PARA CELULARES
+================================= */
+
+@media (max-width: 768px) {
+
+    .menu-lateral {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .menu-lateral h2 {
+        margin-bottom: 20px;
+    }
+
+    .conteudo {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+}
+/* PAINEL INICIAL */
+
+.inicio {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    padding: 10px !important;
+}
+
+.inicio .text-center {
+    margin-bottom: 35px !important;
+}
+
+.inicio .text-center h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #17365d;
+}
+
+.inicio .card {
+    border: none;
+    border-radius: 15px;
+    min-height: 170px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s;
+}
+
+.inicio .card:hover {
+    transform: translateY(-5px);
+}
+
+.inicio .card h3 {
+    color: #17365d;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.inicio .card p {
+    color: #777;
+}
+
+.inicio .card .btn {
+    background-color: #17365d;
+    border: none;
+    width: fit-content;
+}
